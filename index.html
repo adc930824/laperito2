@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Title</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-sam_100_0295">
+        <li class="text">SAM_100_0295</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-sam_100_0296">
+        <li class="text">SAM_100_0296</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-sam_100_0297">
+        <li class="text">SAM_100_0297</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-sam_100_0298">
+        <li class="text">SAM_100_0298</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-sam_100_0299">
+        <li class="text">SAM_100_0299</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-sam_100_0300">
+        <li class="text">SAM_100_0300</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-sam_100_0301">
+        <li class="text">SAM_100_0301</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-sam_100_0302">
+        <li class="text">SAM_100_0302</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-sam_100_0303">
+        <li class="text">SAM_100_0303</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-sam_100_0304">
+        <li class="text">SAM_100_0304</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-sam_100_0305">
+        <li class="text">SAM_100_0305</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-sam_100_0306">
+        <li class="text">SAM_100_0306</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-sam_100_0307">
+        <li class="text">SAM_100_0307</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-sam_100_0309">
+        <li class="text">SAM_100_0309</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-sam_100_0310">
+        <li class="text">SAM_100_0310</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-sam_100_0311">
+        <li class="text">SAM_100_0311</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-sam_100_0312">
+        <li class="text">SAM_100_0312</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-sam_100_0313">
+        <li class="text">SAM_100_0313</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-sam_100_0314">
+        <li class="text">SAM_100_0314</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-sam_100_0315">
+        <li class="text">SAM_100_0315</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-sam_100_0317">
+        <li class="text">SAM_100_0317</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-sam_100_0318">
+        <li class="text">SAM_100_0318</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
